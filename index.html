@@ -125,7 +125,7 @@
 
       (async () => {
         const dataParts = getParts("Build.data", 3);
-        const wasmParts = getParts("Build.wasm", 2);
+        const wasmParts = getParts("Build.wasm", 3);
         const [dataUrl, wasmUrl] = await Promise.all([
           mergeFiles(dataParts),
           mergeFiles(wasmParts),
